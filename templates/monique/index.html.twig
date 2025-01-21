@@ -3,14 +3,28 @@
 {% block title %}Page d'Accueil{% endblock %}
 
 {% block body %}
-    <h1>Bienvenue sur mon site !</h1>
-    <p>My name is  Monique Yande Sene .</p>
-    <p>I am Senegalese and a first-year student in Network and Telecommunications at the IUT of Roanne,
-         part of the TP AB group. Passionate about telecommunications technologies, 
-         I am here to acquire the foundational skills that are essential to understanding the concepts."
+    <h1 style="font-size: 2.5rem;">Bienvenue sur mon site !</h1>
+    <p style="font-size: 1.2rem;">My name is Monique Yande Sene.</p>
+    <p style="font-size: 1.2rem;">I am Senegalese and a first-year student in Network and Telecommunications at the IUT of Roanne, 
+       part of the TP AB group. Passionate about telecommunications technologies, 
+       I am here to acquire the foundational skills that are essential to understanding the concepts.
     </p>
-     
-    <a href="monique/cv" class="btn btn-primary mt-3">Voir mon CV</a>
-    <a href="monique/cv/portfolio" class="btn btn-secondary mt-3">Voir mon Portfolio</a>
+    
+    <h2 style="font-size: 2rem;">Mes Loisirs</h2>
+    <p style="font-size: 1.2rem;">Voici quelques-unes de mes photos de loisirs :</p>
+    
+    <div class="row">
+        <div class="col-md-4">
+            <img src="/image/images1.jpg"alt="Loisir 1" class="img-fluid mb-3">
+        </div>
+        <div class="col-md-4">
+            <img src="/image/photo.jpg" alt="Loisir 2" class="img-fluid mb-3">
+        </div>
+        <div class="col-md-4">
+            <img src="/image/images3.jpg" alt="Loisir 3" class="img-fluid mb-3">
+        </div>
+    </div>
+    
+    <a href="monique/cv" class="btn btn-primary mt-3" style="font-size: 1.2rem;">Voir mon CV</a>
+    <a href="monique/cv/portfolio" class="btn btn-secondary mt-3" style="font-size: 1.2rem;">Voir mon Portfolio</a>
 {% endblock %}
-
