@@ -6,24 +6,25 @@
     <title>CV - Monique Yande Sene</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f0f4f8;
             color: #333;
         }
         .container {
             max-width: 800px;
             margin: 20px auto;
-            background: #fff;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            padding: 20px;
+            background: #ffffff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            border-radius: 8px;
         }
         .header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            border-bottom: 2px solid #004d40;
+            border-bottom: 2px solid #009688;
             padding-bottom: 10px;
         }
         .header .profile-image {
@@ -40,22 +41,29 @@
             object-fit: cover;
         }
         .header h1 {
-            font-size: 24px;
-            color: #004d40;
+            font-size: 28px;
+            color: #009688;
+            margin: 0;
+        }
+        .header p {
+            font-size: 16px;
+            color: #555;
         }
         .contact-info {
             text-align: right;
+            font-size: 14px;
+            color: #555;
         }
         .contact-info p {
             margin: 0;
         }
         .section {
-            margin-top: 20px;
+            margin-top: 30px;
         }
         .section h2 {
-            font-size: 20px;
-            color: #004d40;
-            border-bottom: 1px solid #004d40;
+            font-size: 22px;
+            color: #009688;
+            border-bottom: 2px solid #009688;
             padding-bottom: 5px;
         }
         .section ul {
@@ -63,18 +71,22 @@
             padding: 0;
         }
         .section ul li {
-            margin-bottom: 10px;
+            margin-bottom: 12px;
+            font-size: 16px;
         }
         .languages span {
             display: block;
-            margin-bottom: 5px;
+            margin-bottom: 8px;
+            font-size: 16px;
+            color: #555;
         }
         .skills span {
             background: #e0f2f1;
-            color: #004d40;
-            padding: 5px 10px;
-            border-radius: 5px;
-            margin-right: 5px;
+            color: #009688;
+            padding: 8px 12px;
+            border-radius: 8px;
+            margin-right: 8px;
+            margin-bottom: 10px;
             display: inline-block;
         }
     </style>
@@ -88,7 +100,7 @@
             </div>
             <div>
                 <h1>Monique Yande Sene</h1>
-                <p>chargé de projet Télécom</p>
+                <p><strong>Chargée de projet Télécom</strong></p>
             </div>
             <div class="contact-info">
                 <p>13 avenue de Paris, 42300, Roanne</p>
@@ -102,49 +114,54 @@
                 je suis à la recherche d'un emploi dans le domaine Telecom. 
                 Avec mes compétences techniques et mon expérience, 
                 je suis prête à relever de nouveaux défis et à contribuer au développement de solutions innovantes.</p>
-
-                <div class="section">
-                    <h2>Formation</h2>
+        </div>
+        <div class="section">
+            <h2>Expériences Proffessionnelles</h2>
+            <ul>
+                <li><strong>Technicien réseau et support informatique</strong></li>
+                <ul>
+                    <li>Installer, configurer et maintenir les réseaux locaux (LAN) et réseaux étendus (WAN).</li>
+                    <li>Assister les utilisateurs pour les problèmes réseau (connexion, partage de fichiers, etc.).</li>
+                    <li>Effectuer des diagnostics de pannes et résoudre les problèmes matériels ou logiciels.</li>
                     <ul>
-                        <li> <strong>Technicien réseau et support informatique</strong></li> 
+                        <li><strong>Assistant administrateur réseau</strong></li>
                         <ul>
-                            <li>Installer, configurer et maintenir les réseaux locaux (LAN) et réseaux étendus (WAN).</li>
-                            <li>Assister les utilisateurs pour les problèmes réseau (connexion, partage de fichiers, etc.).</li>
-                            <li>Effectuer des diagnostics de pannes et résoudre les problèmes matériels ou logiciels.</li>
-                            <ul>
-                                <li><strong>Assistant administrateur réseau</strong></li>
-                                <ul>
-                                    <li>Participer à la configuration et à la gestion des infrastructures réseau.</li>
-                                    <li>Surveiller les performances réseau et résoudre les problèmes (monitoring).</li>
-                                    <li>  Aider à sécuriser le réseau contre les cyberattaques basiques (pare-feu, ACL).</li>
-                                    
-                                     </ul>
-                                     <li> <strong>Technicien en maintenance informatique</strong></li>
-                                     <ul>
-                                        <li> Assurer la maintenance des postes de travail et des équipements réseau.
-                                           <li>Résoudre des incidents matériels et logiciels.</li>
-                                            <li>Gérer les connexions réseau des utilisateurs.</li>
-                                       
-                                     </ul>
-                               
-
-                            </ul>
-                            
+                            <li>Participer à la configuration et à la gestion des infrastructures réseau.</li>
+                            <li>Surveiller les performances réseau et résoudre les problèmes (monitoring).</li>
+                            <li>Aider à sécuriser le réseau contre les cyberattaques basiques (pare-feu, ACL).</li>
+                        </ul>
+                        <li><strong>Technicien en maintenance informatique</strong></li>
+                        <ul>
+                            <li>Assurer la maintenance des postes de travail et des équipements réseau.</li>
+                            <li>Résoudre des incidents matériels et logiciels.</li>
+                            <li>Gérer les connexions réseau des utilisateurs.</li>
                         </ul>
                     </ul>
-                </div>
+                </ul>
+            </ul>
+        </div>
         <div class="section">
             <h2>Compétences</h2>
             <div class="skills">
-                <span></span>
                 <span>Connaissance de base en adressage IP, DHCP, DNS.</span>
                 <span>Utilisation d’outils comme Wireshark ou Packet Tracer.</span>
                 <span>Compréhension des protocoles télécoms (VoIP, 4G, 5G).</span>
                 <span>Manipulation d’équipements de télécommunication.</span>
-                <span>    Bases des VLANs, routage statique et dynamique.
-                    Connaissance des équipements réseau (Cisco, HP, etc.).</span>
+                <span>Bases des VLANs, routage statique et dynamique.</span>
+                <span>Connaissance des équipements réseau (Cisco, HP, etc.).</span>
             </div>
         </div>
+        <div class="section">
+            <h2>Centres d’intérêt </h2>
+            <div class="skills">
+                <ul>
+                    <li>Lecture</li>
+                    <li>Cuisine</li>
+                    <li>Activités associations</li>
+                    <li>Musique</li>
+                </ul>
+       </div>
+      </div>
         <div class="section">
             <h2>Langues</h2>
             <div class="languages">
