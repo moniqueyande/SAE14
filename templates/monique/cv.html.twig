@@ -1,0 +1,175 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Pge d'Accueil{% endblock %}
+{% block body %}
+
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Monique Yande Sene</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e6f7f5;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 3px solid #00796b;
+            padding-bottom: 20px;
+        }
+        .header h1 {
+            font-size: 30px;
+            color: #00796b;
+        }
+        .header p {
+            font-size: 16px;
+            color: #555;
+        }
+        .contact-info {
+            text-align: right;
+        }
+        .contact-info p {
+            margin: 0;
+            font-size: 16px;
+            color: #00796b;
+        }
+        .contact-info .icon {
+            font-size: 18px;
+            margin-right: 5px;
+        }
+        .section {
+            margin-top: 30px;
+        }
+        .section h2 {
+            font-size: 24px;
+            color: #00796b;
+            border-bottom: 2px solid #00796b;
+            padding-bottom: 5px;
+        }
+        .section ul {
+            list-style: none;
+            padding: 0;
+        }
+        .section ul li {
+            margin-bottom: 12px;
+            font-size: 16px;
+        }
+        .skills span, .languages span {
+            background: #00796b;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            margin-right: 10px;
+            display: inline-block;
+            font-size: 14px;
+        }
+        .skills span:hover, .languages span:hover {
+            background: #004d40;
+        }
+        .languages {
+            margin-top: 10px;
+        }
+        .contact-info p, .contact-info a {
+            display: block;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div>
+                <h1>Monique Yande Sene</h1>
+                <p>Chargé de projet Telecom</p>
+            </div>
+            <div class="contact-info">
+                <p><span class="icon">📍</span> 13 avenue de Paris, 42300, Roanne</p>
+                <p><span class="icon">📞</span> 0758330165</p>
+                <p><span class="icon">✉️</span> <a href="mailto:yandesenemonique@gmail.com">yandesenemonique@gmail.com</a></p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Profil</h2>
+            <p>
+                Passionnée par les technologies de la télécommunication, 
+                je suis à la recherche d'un emploi dans le domaine Telecom. 
+                Avec mes compétences techniques et mon expérience,
+                 je suis prête à relever de nouveaux défis et à contribuer au développement de solutions innovantes. 
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>Expérience</h2>
+            <ul>
+                <li><strong>Technicien en maintenance informatique</strong> </li>
+                     <ul>
+                    <li>Assurer la maintenance des postes de travail et des équipements réseau.</li> 
+                    <li>Résoudre des incidents matériels et logiciels.</li>
+                    <li>Gérer les connexions réseau des utilisateurs.</li>
+                    </ul>
+                <li><strong>Technicien télécom</strong></li>
+                <ul>
+                     <li>Participer à la configuration et à la gestion des infrastructures réseau.</li>
+                     <li>Surveiller les performances réseau et résoudre les problèmes (monitoring).</li>
+                     <li>Aider à sécuriser le réseau contre les cyberattaques basiques (pare-feu, ACL).</li>
+                     
+                    </ul>
+                    <li><strong>Technicien d'exploitation réseau</strong></li>
+                    <ul>
+                        <li>Surveiller et maintenir le bon fonctionnement des infrastructures réseau.</li>
+                        <li>Configurer des équipements réseau pour optimiser les performances.</li>
+                        <li>Participer à des tests ou mises à jour des systèmes réseau.</li>
+                    </ul>
+            </ul>
+        </div>
+         <div class="section">
+            <h2>Compétences</h2>
+            <div class="skills">
+                <span>Manipulations d'équipements réseau</span>
+                <span> Connaissances fondamentales en réseau </span>
+                <span>Adminisration système et réseau</span>
+                <span>Sécurité informatique de base </span>
+                <span>Programmation</span>
+                <span>Outils et logiciels</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Langues</h2>
+            <div class="languages">
+                <span>Espagnol : Intermédiaire</span>
+                <span>Français : Bilingue</span>
+                <span>Sérère : Langue maternelle</span>
+                <span>Anglais : Intermédiaire</span>
+            </div>
+        </div> 
+
+        <div class="section">
+            <h2>Formation</h2>
+            <ul>
+                <li><strong>BUT Réseaux et Télécommunication (RT)</strong> - Université Jean Monnet Saint-Étienne IUT Roanne (en cours)</li>
+                <li><strong>Baccalauréat Série S2</strong> - Lycée Demba Diop, Sénégal (10/2020 – 07/2023)</li>
+            </ul>
+        </div>
+
+         </div>
+</body>
+</html>
+
+{% endblock %}

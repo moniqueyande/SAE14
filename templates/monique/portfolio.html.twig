@@ -1,0 +1,64 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Pge portfolio{% endblock %}
+{% block body %}
+
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Portfolio</title>
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+</head>
+<body>
+    <div class="portfolio-container">
+        <header class="portfolio-header">
+            <h1>Mon E-Portfolio</h1>
+            <p>Étudiante en Réseaux et Télécommunications - Première Année</p>
+        </header>
+
+        <main class="portfolio-main">
+            <!-- Compétence : Administrer -->
+            <section class="portfolio-section">
+                <h2>Administrer</h2>
+                <p>Maîtrise des systèmes d'exploitation (Windows/Linux), gestion des utilisateurs, gestion des droits d'accès, sauvegardes et restaurations de données.</p>
+                <img src="{{ asset('images/Administrer.jpg') }}" alt="Administrer" class="portfolio-images">
+                
+                <!-- Liens de preuve pour Administrer -->
+                <ul>
+                    <li><a href="lien_vers_une_preuve_1" target="_blank">Preuve 1: Exemple de gestion des utilisateurs sous Linux</a></li>
+                    <li><a href="lien_vers_une_preuve_2" target="_blank">Preuve 2: Projet de sauvegarde et restauration de données</a></li>
+                </ul>
+            </section>
+
+            <!-- Compétence : Connecter -->
+            <section class="portfolio-section">
+                <h2>Connecter</h2>
+                <p>Compétences en configuration de réseaux (LAN/WAN), installation et maintenance d'équipements réseau (routeurs, switchs), et gestion de la connectivité des utilisateurs.</p>
+                <img src="{{ asset('images/connecter.jpg') }}" alt="Connecter" class="portfolio-monique">
+                
+                <!-- Liens de preuve pour Connecter -->
+                <ul>
+                    <li><a href="lien_vers_une_preuve_1" target="_blank">Preuve 1: Configuration réseau dans un projet d'entreprise</a></li>
+                    <li><a href="lien_vers_une_preuve_2" target="_blank">Preuve 2: Installation de routeurs et switchs dans un projet</a></li>
+                </ul>
+            </section>
+
+            <!-- Compétence : Programmer -->
+            <section class="portfolio-section">
+                <h2>Programmer</h2>
+                <p>Expérience en programmation avec Python, Java, développement web (HTML/CSS, PHP) et gestion de bases de données (MySQL).</p>
+                <img src="{{ asset('images/Programmer.jpg') }}" alt="Programmer" class="portfolio-images">
+                
+                <!-- Liens de preuve pour Programmer -->
+                <ul>
+                    <li><a href="" target="_blank">Preuve 1: Code Python pour un projet d'automatisation</a></li>
+                    <li><a href="lien_vers_une_preuve_2" target="_blank">Preuve 2: Développement d'une application web avec PHP et MySQL</a></li>
+                </ul>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
+
+{% endblock %}
